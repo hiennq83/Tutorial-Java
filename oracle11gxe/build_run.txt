@@ -1,0 +1,3 @@
+﻿docker build -t oracle11gxe .
+
+docker run -d -t --name oracle11gxe --shm-size=1g -p 1521:1521 -p 8080:8080 -e ORACLE_PWD=Password9 -v u01/app/oracle/oradata oracle11gxe
