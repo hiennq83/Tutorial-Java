@@ -10,3 +10,10 @@ CLIENT_NUMBER	INSURED_NAME	CLTTYPE	POLICY_NUMBER	CONTRACT_TYPE	PREMIUM_CLASS	COM
 
 
 https://towardsdatascience.com/synthetic-data-generation-a-must-have-skill-for-new-data-scientists-915896c0c1ae
+
+# apache kylin
+docker run -i -t -p 7070:7070 kyligence/kylin:152 /etc/bootstrap.sh -bash  
+
+# apache superset
+docker run --detach --name superset --user root -p 8088:8088 amancevice/superset
+docker exec -it superset superset-init
